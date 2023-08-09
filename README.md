@@ -1,34 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align='center'>
+<img src="./public/jdg.png" width="50px"/>
+<br/> <br/>
+<h1>JDG - Website</h1> 
+</div>
 
-## Getting Started
+## Descrição
 
-First, run the development server:
+### JDG - Website em desenvolvimento
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<!-- [Ver Projeto]() -->
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- # -->
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<!-- ## Layout mobile -->
+<!-- ![Mobile 1](./public/mobile-1.png) -->
+<!-- ![Mobile 2](./public/mobile-2.png) -->
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<!-- ## Layout web -->
+<!-- ![Web 1](./public/web-1.png)  -->
+<!-- ![Web 2](./public/web-2.png) -->
+<!-- ![Web 3](./public/web-3.png) -->
+<!-- ![Web 4](./public/web-4.png) -->
+<!-- ![Web 5](./public/web-5.png) -->
+<!-- ![Web 6](./public/web-6.png) -->
 
-## Learn More
+<br>
 
-To learn more about Next.js, take a look at the following resources:
+<!-- # -->
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Ver Projeto](https://interception-routes.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<!-- # -->
 
-## Deploy on Vercel
+<!-- ## Layout web -->
+<!-- ![Web 1](./public/web-1.png) -->
+#
+<!-- ![Web 2](./public/web-2.png) -->
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Tecnologias
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+💻 **Front-end**
+- [Next.js 13.4](https://nextjs.org)
+- [Typescript](https://www.typescriptlang.org)
+
+📚 **Bibliotecas**
+<!-- - [storybook](https://storybook.js.org/) -->
+<!-- - [next-pwa](https://www.npmjs.com/package/next-pwa) -->
+<!-- - [react-hook-form](https://react-hook-form.com/) -->
+<!-- - [react-toastify](https://www.npmjs.com/package/react-toastify) -->
+- [react-icons](https://react-icons.github.io/react-icons/)
+
+🎨 **Estilização**
+- [tailwindcss](https://tailwindcss.com/docs/installation)
+
+🔋 **Versionamento e Deploy**
+- [Git](https://git-scm.com)
+- [Vercel](https://vercel.com/)
+
+<br>
+
+⚙️ **Configuranções e Instalações**
+
+Clone do Projeto
+
+    $ git clone https://github.com/Juniors-Developers-Group-JDG/Site-JDG-Front-End.git
+
+Instalando as dependências
+
+    $ npm install
+
+Iniciando o projeto
+
+    $ npm run dev
+
+Configuranções do VSCode
+
+     {
+      "[prisma]": {
+        "editor.formatOnSave": true
+      },
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.addMissingImports": true
+      }
+    }
+
+<br>
+
+<!-- **Contribuidores** -->
