@@ -29,6 +29,26 @@ module.exports = {
           DEFAULT: '#FAFAFA',
         },
       },
+      backgroundColor: {
+        primary: {
+          DEFAULT: '#222223',
+        },
+      },
+      keyframes: {
+        mobileActive: {
+          from: {
+            opacity: '0',
+            transform: 'translateY(50px)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateY(0px)',
+          },
+        },
+      },
+      animation: {
+        mobileActive: 'mobileActive .3s ease-in',
+      },
     },
   },
   plugins: [],
