@@ -62,7 +62,7 @@ body {
 }
 
 body {
-  background-color: var(--bg-default);
+  /* background-color: var(--bg-default); */
 
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
