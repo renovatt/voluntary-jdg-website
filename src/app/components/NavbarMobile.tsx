@@ -21,7 +21,11 @@ const NavbarMobile = ({ modal, closeModal }: NavbarMobileTypeProps) => {
             </li>
 
             <li className="m-2 w-full p-2 text-center transition-all hover:scale-105 hover:bg-secondary-800">
-              <RouterLinks href="#vacancy" text="Vagas" onClick={closeModal} />
+              <RouterLinks
+                href="#vacancies"
+                text="Vagas"
+                onClick={closeModal}
+              />
             </li>
 
             <li className="m-2 w-full p-2 text-center transition-all hover:scale-105 hover:bg-secondary-800">

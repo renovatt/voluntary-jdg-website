@@ -11,10 +11,14 @@ const Header = () => {
   const { modal, openModal, closeModal } = useToggle()
 
   return (
-    <header className="fixed left-0 top-0 flex h-20 w-full items-center justify-between bg-primary px-16 transition-all">
+    <header className="flex h-20 w-full items-center justify-between bg-primary px-16 transition-all">
       <Link href="/" className="flex">
-        <figure className="flex h-10 w-10 items-center justify-center rounded-md bg-white">
-          <Image src={logo} alt="logo" className="h-full w-full object-cover" />
+        <figure className="flex h-10 w-10 items-center justify-center rounded-md bg-secondary">
+          <Image
+            src={logo}
+            alt="logo"
+            className="h-full w-full object-cover p-1"
+          />
         </figure>
       </Link>
 
@@ -23,7 +27,7 @@ const Header = () => {
 
       <Link
         href="#contact"
-        className="hidden h-10 w-36 items-center justify-center rounded-lg bg-primary-400 text-base font-extrabold text-secondary-950 transition-all hover:text-white md:flex"
+        className="hidden h-10 w-36 items-center justify-center rounded-lg bg-primary-400 text-base font-semibold text-secondary-950 transition-all hover:text-white md:flex"
       >
         Contato
       </Link>
