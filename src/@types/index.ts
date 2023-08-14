@@ -1,3 +1,5 @@
+import { ReactNode } from 'react'
+
 export type RouterLinksProps = {
   text: string
   href: string
@@ -11,4 +13,8 @@ export type NavbarTypeProps = {
 export type NavbarMobileTypeProps = {
   modal: boolean
   closeModal: () => void
+}
+
+export type ContainerTypeProps = {
+  children: ReactNode
 }
