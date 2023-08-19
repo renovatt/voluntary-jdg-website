@@ -1,8 +1,12 @@
+import { useEffect } from 'react'
 import RouterLinks from '../RouterLinks'
 import { NavbarMobileTypeProps } from './types'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
 const NavbarMobile = ({ modal, closeModal }: NavbarMobileTypeProps) => {
+  useEffect(() => {
+    document.body.style.overflow = modal ? 'hidden' : 'auto'
+  }, [modal])
   return (
     <>
       {modal && (
