@@ -1,5 +1,5 @@
-import RouterLinks from './RouterLinks'
-import { NavbarTypeProps } from '@/@types'
+import RouterLinks from '../RouterLinks'
+import { NavbarTypeProps } from './types'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const Navbar = ({ openModal }: NavbarTypeProps) => {
