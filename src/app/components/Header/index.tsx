@@ -2,16 +2,16 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import Navbar from './NavBar'
+import Navbar from '../Navbar/indext'
 import logo from '@/assets/jdg.png'
-import NavbarMobile from './NavbarMobile'
+import NavbarMobile from '../NavbarMobile'
 import { useToggle } from '@/hooks/useToggle'
 
 const Header = () => {
   const { modal, openModal, closeModal } = useToggle()
 
   return (
-    <header className="container flex h-20 w-full items-center justify-between bg-primary px-16 transition-all">
+    <header className="flex h-20 w-full items-center justify-between bg-primary px-16 transition-all">
       <Link href="/" className="flex">
         <figure className="flex h-10 w-10 items-center justify-center rounded-md bg-secondary">
           <Image
