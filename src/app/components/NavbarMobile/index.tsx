@@ -1,5 +1,5 @@
-import RouterLinks from './RouterLinks'
-import { NavbarMobileTypeProps } from '@/@types'
+import RouterLinks from '../RouterLinks'
+import { NavbarMobileTypeProps } from './types'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 
 const NavbarMobile = ({ modal, closeModal }: NavbarMobileTypeProps) => {
