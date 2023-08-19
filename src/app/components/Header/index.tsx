@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import Navbar from '../Navbar/indext'
+import Navbar from '../Navbar'
 import logo from '@/assets/jdg.png'
 import NavbarMobile from '../NavbarMobile'
 import { useToggle } from '@/hooks/useToggle'
