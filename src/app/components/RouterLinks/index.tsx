@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { RouterLinksProps } from '@/@types'
+import { RouterLinksProps } from './types'
 
 const RouterLinks = ({ href, text, onClick }: RouterLinksProps) => {
   return (
