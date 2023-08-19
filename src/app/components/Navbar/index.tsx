@@ -28,6 +28,7 @@ const Navbar = ({ openModal }: NavbarTypeProps) => {
       </ul>
 
       <Bars3Icon
+        data-testid="svg-close-modal"
         className="h-6 w-6 cursor-pointer text-white md:hidden"
         onClick={openModal}
       />

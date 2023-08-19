@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <header className="flex h-20 w-full items-center justify-between bg-primary px-16 transition-all">
-      <Link href="/" className="flex">
+      <Link href="/" className="flex" data-testid="logo-link">
         <figure className="flex h-10 w-10 items-center justify-center rounded-md bg-secondary">
           <Image
             src={logo}

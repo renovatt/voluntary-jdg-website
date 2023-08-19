@@ -11,6 +11,7 @@ const NavbarMobile = ({ modal, closeModal }: NavbarMobileTypeProps) => {
     <>
       {modal && (
         <nav
+          data-testid="navbar-mobile"
           className={`absolute left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-primary bg-gradient-to-b from-transparent to-primary-400 backdrop-blur-sm transition-all ease-in ${
             modal ? 'flex animate-mobileActive' : ''
           }`}
@@ -46,6 +47,7 @@ const NavbarMobile = ({ modal, closeModal }: NavbarMobileTypeProps) => {
           </ul>
 
           <XMarkIcon
+            data-testid="xmark-icon"
             className="hover:text-textPrimary absolute right-8 top-8 h-8 w-8 cursor-pointer text-white transition-all ease-in"
             onClick={closeModal}
           />
