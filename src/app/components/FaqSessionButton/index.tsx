@@ -16,9 +16,12 @@ const FaqSessionButton = ({
       {question}
       <span className="m-2">
         {isOpen ? (
-          <XMarkIcon className="h-5 w-5 text-secondary" />
+          <XMarkIcon
+            className="h-5 w-5 text-secondary"
+            data-testid="xMarkIcon"
+          />
         ) : (
-          <PlusIcon className="h-5 w-5 text-secondary" />
+          <PlusIcon className="h-5 w-5 text-secondary" data-testid="PlusIcon" />
         )}
       </span>
     </h2>
