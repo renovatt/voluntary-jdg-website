@@ -45,9 +45,20 @@ module.exports = {
             transform: 'translateY(0px)',
           },
         },
+        faq: {
+          from: {
+            opacity: '0',
+            transform: 'translateY(-10px)',
+          },
+          to: {
+            opacity: '1',
+            transform: 'translateY(0px)',
+          },
+        },
       },
       animation: {
         mobileActive: 'mobileActive .3s ease-in',
+        faq: 'faq .3s ease-in',
       },
     },
   },
