@@ -28,6 +28,9 @@ module.exports = {
           50: '#FAFAFA',
           DEFAULT: '#FAFAFA',
         },
+        shadow: {
+          DEFAULT: '#222223',
+        },
       },
       backgroundColor: {
         primary: {
