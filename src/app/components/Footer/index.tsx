@@ -8,7 +8,7 @@ import { MdWhatsapp, MdOutlineMailOutline } from 'react-icons/md'
 
 const Footer = () => {
   return (
-    <footer className="flex items-center justify-center bg-primary pt-20">
+    <footer className="flex items-center justify-center bg-primary bg-gradient-footer pt-20">
       <FooterContainer>
         <section className="flex w-full flex-wrap items-center justify-between px-4 md:items-start md:px-20">
           <FooterLogo />
