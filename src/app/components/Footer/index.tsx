@@ -1,8 +1,8 @@
 import FooterLogo from '../FooterLogo'
+import FooterContainer from '../FooterContainer'
 import FooterNavLinks from '../FooterNavLinks'
 import FooterSocialLinks from '../FooterSocialLinks'
 import FooterCopyright from '../FooterCopyright'
-import FooterContainer from '../FooterContainer'
 import { SlSocialLinkedin } from 'react-icons/sl'
 import { MdWhatsapp, MdOutlineMailOutline } from 'react-icons/md'
 
@@ -18,19 +18,19 @@ const Footer = () => {
               links={[
                 {
                   name: 'Início',
-                  href: '#',
+                  href: '/',
                 },
                 {
                   name: 'Sobre',
-                  href: '#',
-                },
-                {
-                  name: 'Projetos',
-                  href: '#',
+                  href: '#about-us',
                 },
                 {
                   name: 'Blog',
-                  href: '#',
+                  href: '#blog',
+                },
+                {
+                  name: 'Projetos',
+                  href: '#projects',
                 },
               ]}
             />
