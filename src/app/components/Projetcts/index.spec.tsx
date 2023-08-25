@@ -3,11 +3,12 @@ import { render } from '@testing-library/react'
 
 describe('<Projects />', () => {
   it('should render CardProjectContainer and CardProjects correctly', () => {
-    // const { getByTestId } = render(<Projects />)
-    // const cardProjectContainers = getByTestId('card-project-container')
-    // expect(cardProjectContainers).toBeInTheDocument()
-    // const cardProjects = getByTestId('card-project')
-    // expect(cardProjects).toBeInTheDocument()
+    const { getAllByTestId } = render(<Projects />)
+    const cardProjectContainers = getAllByTestId('card-project-container')
+    expect(cardProjectContainers.length).toBeGreaterThan(0)
+
+    const cardProjects = getAllByTestId('card-project')
+    expect(cardProjects.length).toBeGreaterThan(0)
   })
 
   it('should render the main heading correctly', () => {

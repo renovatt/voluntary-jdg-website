@@ -15,7 +15,7 @@ const Projects = () => {
         PROJETOS
       </h1>
 
-      <CardProjectContainer data-testid="card-project-container">
+      <CardProjectContainer>
         <CardProjects
           src={clinicaVeterinaria}
           href="#"

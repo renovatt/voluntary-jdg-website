@@ -12,6 +12,7 @@ const CardProjects = ({
 }: CardProjectsProps) => {
   return (
     <section
+      data-testid="card-project"
       className={`flex h-full w-full flex-col items-center justify-center md:w-1/2 ${
         side ? 'md:mt-28' : 'md:mt-0'
       }`}
