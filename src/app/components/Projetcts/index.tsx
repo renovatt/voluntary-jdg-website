@@ -1,5 +1,6 @@
 import CardProjects from '../CardProject'
 import emBreve from '@/assets/breve.png'
+import escolaReal from '@/assets/escola-real.png'
 import redeSocial from '@/assets/rede-social.png'
 import CardProjectContainer from '../CardProjectContainer'
 import clinicaVeterinaria from '@/assets/clinica-veterinaria.png'
@@ -33,19 +34,19 @@ const Projects = () => {
 
       <CardProjectContainer>
         <CardProjects
-          src={emBreve}
+          src={escolaReal}
           href="#"
           description="Website"
           tittle="Escola do Real"
         />
 
-        {/* <CardProjects
+        <CardProjects
           src={emBreve}
           href="#"
           description="Website"
           tittle="Em breve"
           side={true}
-        /> */}
+        />
       </CardProjectContainer>
     </section>
   )

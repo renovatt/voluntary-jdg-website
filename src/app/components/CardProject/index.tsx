@@ -16,13 +16,13 @@ const CardProjects = ({
         side ? 'md:mt-28' : 'md:mt-0'
       }`}
     >
-      <article>
+      <article className="h-full w-full">
         <figure>
           <Image
             src={src}
             alt={tittle + '-image'}
-            className="h-full w-full bg-secondary-900 object-cover md:min-h-[14rem]
-             md:min-w-[22rem]"
+            className="h-full w-full bg-secondary-900 object-fill
+             md:max-h-80 md:min-h-[14rem] md:min-w-[22rem]"
             loading="lazy"
           />
         </figure>
