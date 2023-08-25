@@ -17,7 +17,7 @@ const Faq = () => {
   }
 
   return (
-    <section className="container bg-primary px-4 md:px-20">
+    <section className="container bg-primary px-4 pb-8 md:px-20">
       <h1 className="mb-8 w-8 border border-transparent border-b-primary font-bold text-secondary">
         FAQ
       </h1>
