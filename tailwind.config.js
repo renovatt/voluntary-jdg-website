@@ -12,7 +12,7 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-footer':
-          'radial-gradient(circle, rgba(87, 144, 255, 0.14) 0%, rgba(75, 146, 233, 0.082171) 41.31%, rgba(58, 149, 201, 0) 100%)',
+          'radial-gradient(49.05% 51.14% at 50.08% 51.38%, rgba(87, 144, 255, 0.14) 0%, rgba(75, 146, 233, 0.082171) 41.31%, rgba(58, 149, 201, 0) 100%)',
       },
       colors: {
         primary: {
