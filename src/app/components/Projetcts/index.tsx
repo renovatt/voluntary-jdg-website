@@ -4,6 +4,7 @@ import escolaReal from '@/assets/escola-real.png'
 import redeSocial from '@/assets/rede-social.png'
 import CardProjectContainer from '../CardProjectContainer'
 import clinicaVeterinaria from '@/assets/clinica-veterinaria.png'
+import Title from '../Title'
 
 const Projects = () => {
   return (
@@ -11,9 +12,7 @@ const Projects = () => {
       id="projects"
       className="container overflow-hidden bg-primary px-4 py-10 md:px-20"
     >
-      <h1 className="mb-8 inline-block border border-transparent border-b-primary font-bold text-secondary">
-        PROJETOS
-      </h1>
+      <Title text="PROJETOS" />
 
       <CardProjectContainer>
         <CardProjects
