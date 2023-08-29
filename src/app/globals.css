@@ -61,14 +61,16 @@ body {
   }
 }
 
-body {
-  /* background-color: var(--bg-default); */
+@layer utilities{
+  .bg-gradient-center{
+    background: radial-gradient(
+      circle,
+      rgba(25,46,75,1) 0%,
+      rgba(34,34,35,1) 32%
+    );
+  }
+}
 
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+body {
+  background-color: var(--bg-default);
 }

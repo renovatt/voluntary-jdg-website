@@ -5,6 +5,7 @@ import { Fragment, useState } from 'react'
 import FaqSessionButton from '../FaqSessionButton'
 import FaqSessionContent from '../FaqSessionContent'
 import { FAQSessionsMock } from '@/mocks/FAQSessions'
+import Title from '../Title'
 
 const Faq = () => {
   const [openStates, setOpenStates] = useState<OpenStates>({})
@@ -17,10 +18,8 @@ const Faq = () => {
   }
 
   return (
-    <section className="container bg-primary px-4 md:px-20">
-      <h1 className="mb-8 w-8 border border-transparent border-b-primary font-bold text-secondary">
-        FAQ
-      </h1>
+    <section className="container bg-primary px-4 pb-8 md:px-20">
+      <Title text="FAQ" />
 
       <article className="flex flex-col items-center justify-center">
         {FAQSessionsMock.map((session) => (
