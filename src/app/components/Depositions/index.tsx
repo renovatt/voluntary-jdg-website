@@ -1,24 +1,43 @@
+"use client"
 import React from 'react'
 import DepositionsItem from './DepositionsItem'
-
+import Title from '../Title'
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination } from 'swiper/modules'
+import { sliderItemsMock } from './mock'
 
 
 export default function Depositions() {
   return (
-    <section className="container bg-primary px-4 md:px-20 sm:my-32 mb-[266px]">
-      <p className="mb-8 inline-block border-b text-left border-b-primary font-bold text-secondary">
-        DEPOIMENTOS
-      </p>
+    <section className="container bg-primary px-4 md:px-20 sm:my-32 mb-[100px]">
+      <Title text="Depoimentos" />
 
-      <h1 className='uppercase pb-16 text-2xl font-medium text-zinc-50 sm:text-xxl'>O que estão falando sobre nós?</h1>
-   
-      <img src={'/icons/quotation.svg'} alt="Quotation" className='mb-14' />      
+      <h2 className='uppercase pb-16 text-2xl font-medium xl:w-[454px] leading-10 text-zinc-50 sm:text-xxl'>O que estão falando sobre nós?</h2>
+          
+      <Swiper
+        speed={900}        
+        slidesPerView={1}
+        className="ease flex h-full w-full transition duration-200 depositionsSwiper"
+        navigation
+        modules={[Navigation, Pagination]}
+        loop={false}
+        spaceBetween={10}
+      >
+      {sliderItemsMock?.map(item => {
+        return (
+          <SwiperSlide key={item.id}>
+            <DepositionsItem
+              id={item.id}
+              name={item.name}
+              imgUrl={item.image}
+              description={item.text}
+            />
+          </SwiperSlide>
+        )
+      })}
+      </Swiper>
 
-      <DepositionsItem
-        name='Julia Duarte'
-        imgUrl='/people.png'
-        descrition="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-      />
+  
     </section>
   )
 }
