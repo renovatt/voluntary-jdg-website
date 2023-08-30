@@ -57,7 +57,7 @@ body {
 
 @layer components {
   .container {
-    @apply sm:max-w-[768px] md:max-w-[1440px];
+    @apply sm:max-w-[768px] md:max-w-[1216px];
   }
 }
 
