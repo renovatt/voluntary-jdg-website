@@ -1,5 +1,6 @@
 export interface DepositionsItemProps{
-  descrition: string;
+  id: number;
+  description: string;
   imgUrl: string
   name: string
 }
