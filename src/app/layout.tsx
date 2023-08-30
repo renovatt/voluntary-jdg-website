@@ -1,4 +1,10 @@
-import './globals.css'
+import '../app/styles/globals.css'
+import "../app/styles/slider.scss"
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/scrollbar"
+
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import Container from './components/Container'
