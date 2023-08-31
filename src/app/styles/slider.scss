@@ -1,0 +1,38 @@
+.depositionsSwiper {
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute;
+        width: 3.375rem;
+        height: 3.375rem;
+        border-radius: 50%;
+        top: 95%;
+        background-color: rgba(15, 204, 231, 0.19);
+        border: 1px solid #00EBF0
+    }
+    .swiper-button-disabled {
+        border: 1px solid #7A7A7B;
+        background: #1D1D1E;
+        color: white;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        color: #00EBF0;
+        font-size: 1rem;
+    }
+    .swiper-slide {
+        height: 830px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: rgba(15, 204, 231, 0.19);
+    }
+    @media (min-width: 600px) {
+        height: 560px;
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: 90%;
+        }
+        .swiper-button-next {
+            left: 10%;
+        }
+    }
+}
