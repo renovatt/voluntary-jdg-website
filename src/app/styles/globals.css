@@ -69,7 +69,15 @@ body {
       rgba(34,34,35,1) 32%
     );
   }
-}
+
+  .bg-gradient-btn {
+    background: linear-gradient(
+      0deg, 
+      rgba(0, 235, 240, 0.19), 
+      rgba(0, 235, 240, 0.19)
+      );
+    }
+  }
 
 body {
   background-color: var(--bg-default);
