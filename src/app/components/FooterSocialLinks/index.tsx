@@ -5,7 +5,7 @@ const FooterSocialLinks = ({ socialMedia }: FooterSocialLinksProps) => {
   return (
     <section
       data-testid="footer-social-links"
-      className="mt-8 flex w-[90%] flex-wrap items-center justify-start border border-x-transparent border-y-primary-400 p-4 sm:justify-center"
+      className="mt-8 flex w-full flex-wrap items-center justify-start border border-x-transparent border-y-primary-400 p-4 sm:justify-center"
     >
       {socialMedia.map((social, index) => (
         <Link
