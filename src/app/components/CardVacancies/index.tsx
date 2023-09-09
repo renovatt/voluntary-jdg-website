@@ -10,7 +10,7 @@ const CardVacancies = ({ techs, title, description }: CardVacanciesProps) => {
         Estamos procurando um novo
       </span>
       <article className="mt-4">
-        <h1 className="text-xl font-bold tracking-wider text-secondary">
+        <h1 className="text-xl font-semibold tracking-wider text-secondary">
           {title}
         </h1>
         {techs.map((tech, index) => (
