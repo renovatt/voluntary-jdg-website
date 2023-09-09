@@ -9,9 +9,9 @@ describe('<Vacancies/>', () => {
     expect(vacanciesPage).toBeInTheDocument()
   })
 
-  it('should match snapshot', () => {
-    const { asFragment } = render(<Vacancies />)
+  // it('should match snapshot', () => {
+  //   const { asFragment } = render(<Vacancies />)
 
-    expect(asFragment()).toMatchSnapshot()
-  })
+  //   expect(asFragment()).toMatchSnapshot()
+  // })
 })

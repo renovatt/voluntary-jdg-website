@@ -10,12 +10,14 @@ const CardVacancies = ({ techs, title, description }: CardVacanciesProps) => {
         Estamos procurando um novo
       </span>
       <article className="mt-4">
-        <h1 className="text-xl font-bold text-secondary">{title}</h1>
+        <h1 className="text-xl font-bold tracking-wider text-secondary">
+          {title}
+        </h1>
         {techs.map((tech, index) => (
           <span
             key={tech.id}
             data-tech={tech.name}
-            className="relative p-2  text-xs text-primary-400"
+            className="relative p-2 text-xs tracking-wider text-primary-400"
           >
             {tech.name}
             {index < techs.length - 1 && (
@@ -25,7 +27,7 @@ const CardVacancies = ({ techs, title, description }: CardVacanciesProps) => {
             )}
           </span>
         ))}
-        <p className="my-4 max-h-16 overflow-hidden text-xs text-secondary-500">
+        <p className="my-4 max-h-16 overflow-hidden text-xs tracking-wide text-secondary-500">
           {description}
         </p>
 

@@ -13,7 +13,7 @@ const VacancieDropdown = ({ handleCategorySelect }: VacancieDropdownProps) => {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <section>
-        <Menu.Button className="inline-flex w-full items-center justify-center gap-x-1.5 rounded-md bg-primary-900 px-4 py-3 text-sm font-semibold  text-secondary shadow-sm hover:bg-zinc-900">
+        <Menu.Button className="inline-flex w-full items-center justify-center gap-x-1.5 rounded-md bg-primary-900 px-4 py-3 text-sm text-secondary shadow-sm hover:bg-zinc-900">
           <BiFilter className="h-5 w-5" />
           Filtrar por
           <ChevronDownIcon

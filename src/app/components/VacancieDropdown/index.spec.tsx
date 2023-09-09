@@ -9,7 +9,7 @@ describe('<VacancieDropdown />', () => {
     render(<VacancieDropdown handleCategorySelect={mockHandleCategorySelect} />)
     const dropdownButton = screen.getByText('Filtrar por')
     expect(dropdownButton).toBeInTheDocument()
-    expect(dropdownButton).toHaveClass('text-sm font-semibold text-secondary')
+    expect(dropdownButton).toHaveClass('text-sm text-secondary')
   })
 
   it('should open the dropdown menu on button click', async () => {
