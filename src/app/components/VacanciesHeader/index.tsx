@@ -1,6 +1,9 @@
 const VacanciesHeader = () => {
   return (
-    <header className="mt-10 flex flex-col items-center justify-center">
+    <header
+      data-testid="vacancies-header-text"
+      className="mt-10 flex flex-col items-center justify-center"
+    >
       <h1 className="my-4 flex flex-col items-center justify-center text-xl font-bold text-primary-400 md:text-3xl">
         Encontre sua vaga <span>voluntária aqui!</span>
       </h1>

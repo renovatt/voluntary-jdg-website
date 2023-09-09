@@ -15,7 +15,8 @@ const VacanciesPage = () => {
       !selectedCategory || vacancie.category === selectedCategory
     const textMatch =
       !searchText ||
-      vacancie.title.toLowerCase().includes(searchText.toLowerCase())
+      (typeof searchText === 'string' &&
+        vacancie.title.toLowerCase().includes(searchText.toLowerCase()))
 
     return categoryMatch && textMatch
   })
@@ -31,7 +32,10 @@ const VacanciesPage = () => {
   }
 
   return (
-    <section className="container flex flex-col items-center justify-center px-4 md:px-20">
+    <section
+      data-testid="vacancies-page"
+      className="container flex flex-col items-center justify-center px-4 md:px-20"
+    >
       <VacanciesHeader />
       <section className="mb-10 mt-20 flex w-full flex-col items-start justify-between gap-4 md:flex-row md:items-center">
         <VacancieInputFilter

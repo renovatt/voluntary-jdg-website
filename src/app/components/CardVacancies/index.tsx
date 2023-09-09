@@ -9,11 +9,12 @@ const CardVacancies = ({ techs, title, description }: CardVacanciesProps) => {
       <span className="rounded-lg bg-primary-800 p-2 text-xs text-secondary">
         Estamos procurando um novo
       </span>
-      <article>
-        <h1 className="mt-4 text-xl font-bold text-secondary">{title}</h1>
+      <article className="mt-4">
+        <h1 className="text-xl font-bold text-secondary">{title}</h1>
         {techs.map((tech, index) => (
           <span
             key={tech.id}
+            data-tech={tech.name}
             className="relative p-2  text-xs text-primary-400"
           >
             {tech.name}
