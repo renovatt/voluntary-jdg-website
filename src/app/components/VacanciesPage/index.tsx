@@ -37,7 +37,7 @@ const VacanciesPage = () => {
       className="container flex flex-col items-center justify-center px-4 md:px-20"
     >
       <VacanciesHeader />
-      <section className="mb-10 mt-20 flex w-full flex-col items-start justify-between gap-4 md:flex-row md:items-center">
+      <section className="mb-10 mt-20 flex w-full flex-col items-end justify-between gap-4 md:flex-row md:items-center">
         <VacancieInputFilter
           value={searchText}
           onChange={(e) => handleInputFilter(e.target.value)}

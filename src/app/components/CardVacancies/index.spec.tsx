@@ -73,7 +73,7 @@ describe('<CardVacancies />', () => {
 
     const titleElement = container.querySelector('h1')
     expect(titleElement).toHaveClass('text-xl')
-    expect(titleElement).toHaveClass('font-bold')
+    expect(titleElement).toHaveClass('font-semibold')
     expect(titleElement).toHaveClass('text-secondary')
 
     techs.forEach((tech) => {
