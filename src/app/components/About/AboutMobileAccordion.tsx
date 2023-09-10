@@ -16,7 +16,7 @@ export default function AboutMobileAccordion({ icon, text, title, open, onClick}
             <img src={icon} alt={title} />
             <h2 className='font-bold'>{title}</h2>
           </figure>
-          <img onClick={onClick} src={'./icons/down.svg'} className='sm:hidden' alt={'Down'} />
+          <img onClick={onClick} src={'./icons/down.svg'} className='sm:hidden' alt={'Arrow Down'} />
         </div>   
         {open && <p className='leading-8 mt-5 duration-500 ease-out transition-all'>{text}</p>}
       </article>

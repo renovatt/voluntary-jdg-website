@@ -1,7 +1,6 @@
 import { render, screen , fireEvent} from "@testing-library/react"
 import AboutMobileAccordion from "./AboutMobileAccordion"
 
-
 const data = {
   icon: 'icon.svg',
   title: 'Missão',
