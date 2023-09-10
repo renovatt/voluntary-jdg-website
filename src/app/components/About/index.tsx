@@ -51,15 +51,15 @@ export default function About() {
               </p>
             </article>             
           </div>
-            <article className='sm:border-none hidden sm:block transition-all ease-out duration-500 text-zinc-50 border rounded border-primary-400'>  
-                <div className='flex items-center justify-between'>
-                  <figure className='flex items-center gap-4'>
-                    <img src={'/icons/values.svg'} alt={'Valores'} />
-                    <h2 className='font-bold'>Valores</h2>
-                  </figure>               
-                </div>   
-                <p className='leading-8 mt-5 duration-500 ease-out transition-all'>Somos movidos pela paixão pela tecnologia, comprometidos com a colaboração, o aprendizado contínuo e o impacto positivo na comunidade. Valorizamos a <span className='text-primary-400'>inovação, a acessibilidade e a inclusão</span>, mantendo um <span className='text-primary-400'>ambiente acolhedor, respeitoso e colaborativo</span> para todos os membros.</p>
-            </article>
+          <article className='sm:border-none hidden mt-10 sm:block transition-all ease-out duration-500 text-zinc-50 border rounded border-primary-400'>  
+            <div className='flex items-center justify-between'>
+              <figure className='flex items-center gap-4'>
+                <img src={'/icons/values.svg'} alt={'Valores'} />
+                <h2 className='font-bold'>Valores</h2>
+              </figure>               
+            </div>   
+            <p className='leading-8 mt-5 duration-500 ease-out transition-all'>Somos movidos pela paixão pela tecnologia, comprometidos com a colaboração, o aprendizado contínuo e o impacto positivo na comunidade. Valorizamos a <span className='text-primary-400'>inovação, a acessibilidade e a inclusão</span>, mantendo um <span className='text-primary-400'>ambiente acolhedor, respeitoso e colaborativo</span> para todos os membros.</p>
+          </article>
         </article>
         <Image width={416} height={780} alt='Picture of a computer on a table' src={'/about.png'} className='hidden bg-cover xl:block' />
 
