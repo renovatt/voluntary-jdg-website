@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className="flex items-center justify-center bg-primary bg-gradient-footer pt-20">
       <FooterContainer>
-        <section className="flex w-full flex-wrap items-center justify-between px-4 md:items-start md:px-20">
+        <section className="flex w-full flex-wrap items-center justify-between px-4 md:items-start md:px-0">
           <FooterLogo />
           <aside className="md:mt0 mt-10 flex flex-wrap items-start justify-start md:flex-nowrap md:justify-around">
             <FooterNavLinks

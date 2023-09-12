@@ -1,3 +1,4 @@
+import About from './components/About'
 import Banner from './components/Banner'
 import Depositions from './components/Depositions'
 import Faq from './components/Faq'
@@ -8,7 +9,8 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <Volunteers />
+      <About />
+      <Volunteers />      
       <Projects />
       <Depositions />
       <Faq />
