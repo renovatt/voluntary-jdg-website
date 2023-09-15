@@ -38,7 +38,7 @@ describe('<FooterSocialLinks/>', () => {
     const sectionElement = container.querySelector('section')
     expect(sectionElement).toHaveClass('mt-8')
     expect(sectionElement).toHaveClass('flex')
-    expect(sectionElement).toHaveClass('w-[90%]')
+    expect(sectionElement).toHaveClass('w-full')
     expect(sectionElement).toHaveClass('flex-wrap')
     expect(sectionElement).toHaveClass('items-center')
     expect(sectionElement).toHaveClass('justify-start')
