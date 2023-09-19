@@ -10,7 +10,7 @@ const CardPost = ({
 }: CardPostProps) => {
   return (
     <section className="container flex flex-col items-center justify-center gap-4 px-4 py-10 md:px-0">
-      <h1 className="max-w-2xl text-center text-3xl font-semibold text-primary md:text-4xl">
+      <h1 className="max-w-2xl text-center text-2xl font-semibold tracking-wider text-primary md:text-3xl">
         {title}
       </h1>
       <span className="text-xs text-secondary-500">{createdAt}</span>
