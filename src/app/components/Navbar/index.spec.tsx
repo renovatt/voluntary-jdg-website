@@ -45,7 +45,7 @@ describe('<Navbar/>', () => {
     expect(homeLink).toHaveAttribute('href', '/')
     expect(aboutLink).toHaveAttribute('href', '#about-us')
     expect(vacanciesLink).toHaveAttribute('href', '/views/vacancies')
-    expect(blogLink).toHaveAttribute('href', '#blog')
+    expect(blogLink).toHaveAttribute('href', '/views/blog')
     expect(projectsLink).toHaveAttribute('href', '#projects')
   })
 })
