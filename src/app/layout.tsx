@@ -1,15 +1,16 @@
 import '../app/styles/globals.css'
-import "../app/styles/slider.scss"
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
-import "swiper/css/scrollbar"
+import '../app/styles/slider.scss'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import Container from './components/Container'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import { ToastifyProvider } from './Providers'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -29,9 +30,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={poppins.className}>
-        <Header />
-        <Container>{children}</Container>
-        <Footer />
+        <ToastifyProvider>
+          <Header />
+          <Container>{children}</Container>
+          <Footer />
+        </ToastifyProvider>
       </body>
     </html>
   )
