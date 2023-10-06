@@ -1,15 +1,26 @@
 import CardPost from '.'
 import { render, screen } from '@testing-library/react'
 
-const mockCardData = {
-  title: 'Test Title',
-  subtitle: 'Test Subtitle',
-  description: 'Test Description',
-  image: '/test-image.jpg',
-  createdAt: '2023-08-21',
-}
+jest.mock('next/navigation', () => ({
+  useRouter: jest.fn(),
+}))
 
 describe('CardPost', () => {
+  const mockCardData = {
+    title: 'Test Title',
+    subtitle: 'Test Subtitle',
+    description: 'Test Description',
+    image: '/test-image.jpg',
+    createdAt: '2023-08-21',
+  }
+
+  beforeEach(() => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    jest.spyOn(require('next/navigation'), 'useRouter').mockReturnValue({
+      back: jest.fn(),
+    })
+  })
+
   it('should render the title', () => {
     render(<CardPost {...mockCardData} />)
     const titleElement = screen.getByText('Test Title')
