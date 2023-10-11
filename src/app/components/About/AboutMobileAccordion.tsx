@@ -1,24 +1,28 @@
 import React from 'react'
+import { AboutMobileProps } from './types'
+import { IoIosArrowDown } from 'react-icons/io'
 
-interface AboutMobileProps{
-  icon: string
-  title: string;
-  text: string
-  open: boolean
-  onClick: () => void;
-}
-
-export default function AboutMobileAccordion({ icon, text, title, open, onClick}: AboutMobileProps) {
+export default function AboutMobileAccordion({
+  icon: Icon,
+  text,
+  title,
+  open,
+  onClick,
+}: AboutMobileProps) {
   return (
-      <article className='sm:hidden transition-all ease-out duration-500 text-zinc-50 border rounded border-primary-400 p-4'>  
-        <div className='flex items-center justify-between'>
-          <figure className='flex items-center gap-4'>
-            <img src={icon} alt={title} />
-            <h2 className='font-bold'>{title}</h2>
-          </figure>
-          <img onClick={onClick} src={'./icons/down.svg'} className='sm:hidden' alt={'Arrow Down'} />
-        </div>   
-        {open && <p className='leading-8 mt-5 duration-500 ease-out transition-all'>{text}</p>}
-      </article>
+    <article className="rounded border border-primary-400 p-4 text-zinc-50 transition-all duration-500 ease-out sm:hidden">
+      <div className="flex items-center justify-between">
+        <figure className="flex items-center gap-4">
+          <Icon className="h-8 w-8 text-primary-400" />
+          <h2 className="font-bold">{title}</h2>
+        </figure>
+        <IoIosArrowDown onClick={onClick} className="h-6 w-6 sm:hidden" />
+      </div>
+      {open && (
+        <p className="mt-5 leading-8 transition-all duration-500 ease-out">
+          {text}
+        </p>
+      )}
+    </article>
   )
 }

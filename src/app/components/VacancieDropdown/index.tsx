@@ -11,9 +11,15 @@ const VacancieDropdown = ({ handleCategorySelect }: VacancieDropdownProps) => {
   }
 
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu
+      as="div"
+      className="relative w-full text-left md:inline-block xl:w-auto"
+    >
       <section>
-        <Menu.Button className="inline-flex w-60 items-center justify-center gap-x-1.5 rounded-md bg-primary-900 px-4 py-3 text-sm text-secondary shadow-sm hover:bg-zinc-900">
+        <Menu.Button
+          className="inline-flex w-full items-center justify-between gap-x-1.5 rounded-md bg-primary-900 px-4 py-3 text-sm text-secondary shadow-sm hover:bg-zinc-900 md:flex md:justify-center
+         xl:w-60"
+        >
           <BiFilter className="h-5 w-5" />
           Filtrar por
           <ChevronDownIcon
@@ -32,7 +38,7 @@ const VacancieDropdown = ({ handleCategorySelect }: VacancieDropdownProps) => {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <Menu.Items className="absolute right-0 z-10 mt-2 w-full origin-top-right rounded-md bg-zinc-900 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <section className="py-1">
             {Categories.map((categories) =>
               categories.categories.map((category) => (

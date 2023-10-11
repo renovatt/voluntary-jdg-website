@@ -78,7 +78,7 @@ export default function VacancyCardPage({
         </p>
       </section>
 
-      <section className="mt-10 w-full bg-secondary-880 px-10 py-16">
+      <section className="mt-10 w-full bg-secondary-880 px-4 py-16 xl:px-6">
         <span className="flex h-16 w-full gap-5 border border-x-transparent border-b-secondary-100 border-t-transparent">
           <h1 className=" text-2xl text-secondary-50 xl:text-xxl">
             Voluntariar-se

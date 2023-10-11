@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 export default function CardBlog({ date, image, title, id }: CardBlogProps) {
   const route = useRouter()
   const handlePushRoute = useCallback(() => {
-    route.push(`/views/post/${id}`)
+    route.push(`/post/${id}`)
   }, [id, route])
 
   return (

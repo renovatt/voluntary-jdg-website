@@ -6,12 +6,14 @@ import Navbar from '../Navbar'
 import logo from '@/assets/jdg.png'
 import NavbarMobile from '../NavbarMobile'
 import { useToggle } from '@/hooks/useToggle'
+import { usePathname } from 'next/navigation'
 
 const Header = () => {
+  const path = usePathname()
   const { modal, openModal, closeModal } = useToggle()
 
   return (
-    <header className="flex h-20 w-full items-center justify-between bg-primary px-16 transition-all">
+    <header className="flex h-20 w-full items-center justify-between bg-primary px-4 transition-all md:px-16">
       <Link href="/" className="flex" data-testid="logo-link">
         <figure className="flex h-10 w-10 items-center justify-center rounded-md bg-secondary">
           <Image
@@ -26,7 +28,7 @@ const Header = () => {
       <NavbarMobile modal={modal} closeModal={closeModal} />
 
       <Link
-        href="#contact"
+        href={`${path === '/' ? '#contact' : '/#contact'}`}
         className="hidden h-10 w-36 items-center justify-center rounded-lg bg-primary-400 text-base font-semibold text-secondary-950 transition-all hover:text-white md:flex"
       >
         Contato

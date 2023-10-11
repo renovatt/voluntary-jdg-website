@@ -1,18 +1,17 @@
-import { render, screen } from "@testing-library/react"
-import VolunteersItem from "./VolunteersItem"
-
+import { render, screen } from '@testing-library/react'
+import VolunteersItem from './VolunteersItem'
 
 const data = {
   image: '/image.png',
   name: 'Carlos',
-  jobPosition: 'Dev Front-end'
+  jobPosition: 'Dev Front-end',
 }
 
-const {getByAltText,getByText} = screen
+const { getByAltText, getByText } = screen
 
 describe('VolunteersItem', () => {
   it('should render component by default', () => {
-    render(<VolunteersItem  {...data} />)
+    render(<VolunteersItem {...data} />)
 
     const image = getByAltText(data.name)
     const name = getByText(data.name)

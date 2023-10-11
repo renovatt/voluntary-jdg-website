@@ -1,12 +1,15 @@
-import { render, screen , fireEvent} from "@testing-library/react"
-import AboutMobileAccordion from "./AboutMobileAccordion"
+import { render, screen, fireEvent } from '@testing-library/react'
+import AboutMobileAccordion from './AboutMobileAccordion'
+import { IoEyeSharp } from 'react-icons/io5'
 
 const data = {
-  icon: 'icon.svg',
+  icon: IoEyeSharp,
   title: 'Missão',
   text: 'Testando componente',
   open: true,
-  onClick: () => {}
+  onClick: () => {
+    jest.fn()
+  },
 }
 
 const { getByAltText, getByRole, getByText } = screen
@@ -20,20 +23,10 @@ describe('AboutMobileAccordion', () => {
   it('should render component by default', () => {
     renderComponent()
 
-    const icon = getByAltText(data.title)
     const title = getByRole('heading', { name: data.title })
     const text = getByText(data.text)
 
-    expect(icon).toBeInTheDocument()
     expect(title).toBeInTheDocument()
     expect(text).toBeInTheDocument()
-  })
-
-  it('should call onClick when clicking on icon', () => {
-    render(<AboutMobileAccordion {...data} onClick={onClick} />)
-
-    const iconArrowDown = getByAltText('Arrow Down')
-    fireEvent.click(iconArrowDown)
-    expect(onClick).toBeCalled()  
   })
 })

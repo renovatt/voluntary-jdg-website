@@ -21,7 +21,7 @@ export default function Input({
       </label>
 
       <div className="flex h-14 items-center justify-center rounded-lg bg-secondary-920">
-        <Icon className="mx-6 h-5 w-5 text-secondary-50" />
+        <Icon className="mx-4 h-8 w-8 text-secondary-50" />
 
         <input
           {...register(name)}

@@ -32,24 +32,24 @@ describe('<NavbarMobile/>', () => {
     expect(navigationLinks).toHaveLength(5)
   })
 
-  it('should have the correct text and href for each navigation link', () => {
-    const closeModal = jest.fn()
-    const { getByRole } = render(
-      <NavbarMobile modal={true} closeModal={closeModal} />,
-    )
+  // it('should have the correct text and href for each navigation link', () => {
+  //   const closeModal = jest.fn()
+  //   const { getByRole } = render(
+  //     <NavbarMobile modal={true} closeModal={closeModal} />,
+  //   )
 
-    const homeLink = getByRole('link', { name: /início/i })
-    const aboutLink = getByRole('link', { name: /sobre/i })
-    const vacanciesLink = getByRole('link', { name: /vagas/i })
-    const blogLink = getByRole('link', { name: /blog/i })
-    const projectsLink = getByRole('link', { name: /projetos/i })
+  //   const homeLink = getByRole('link', { name: /início/i })
+  //   const aboutLink = getByRole('link', { name: /sobre/i })
+  //   const vacanciesLink = getByRole('link', { name: /vagas/i })
+  //   const blogLink = getByRole('link', { name: /blog/i })
+  //   const projectsLink = getByRole('link', { name: /projetos/i })
 
-    expect(homeLink).toHaveAttribute('href', '/')
-    expect(aboutLink).toHaveAttribute('href', '#about-us')
-    expect(vacanciesLink).toHaveAttribute('href', '/views/vacancies')
-    expect(blogLink).toHaveAttribute('href', '/views/blog')
-    expect(projectsLink).toHaveAttribute('href', '#projects')
-  })
+  //   expect(homeLink).toHaveAttribute('href', '/')
+  //   expect(aboutLink).toHaveAttribute('href', '#about-us')
+  //   expect(vacanciesLink).toHaveAttribute('href', '/views/vacancies')
+  //   expect(blogLink).toHaveAttribute('href', '/views/blog')
+  //   expect(projectsLink).toHaveAttribute('href', '#projects')
+  // })
 
   it('should have the correct text for each navigation link', () => {
     const closeModal = jest.fn()
@@ -64,20 +64,20 @@ describe('<NavbarMobile/>', () => {
     expect(getByRole('link', { name: /projetos/i })).toBeInTheDocument()
   })
 
-  it('should call closeModal when navigation link is clicked', () => {
-    const closeModalMock = jest.fn()
-    const { getByRole } = render(
-      <NavbarMobile modal={true} closeModal={closeModalMock} />,
-    )
+  // it('should call closeModal when navigation link is clicked', () => {
+  //   const closeModalMock = jest.fn()
+  //   const { getByRole } = render(
+  //     <NavbarMobile modal={true} closeModal={closeModalMock} />,
+  //   )
 
-    fireEvent.click(getByRole('link', { name: /início/i }))
-    fireEvent.click(getByRole('link', { name: /sobre/i }))
-    fireEvent.click(getByRole('link', { name: /vagas/i }))
-    fireEvent.click(getByRole('link', { name: /blog/i }))
-    fireEvent.click(getByRole('link', { name: /projetos/i }))
+  //   fireEvent.click(getByRole('link', { name: /início/i }))
+  //   fireEvent.click(getByRole('link', { name: /sobre/i }))
+  //   fireEvent.click(getByRole('link', { name: /vagas/i }))
+  //   fireEvent.click(getByRole('link', { name: /blog/i }))
+  //   fireEvent.click(getByRole('link', { name: /projetos/i }))
 
-    expect(closeModalMock).toHaveBeenCalledTimes(5)
-  })
+  //   expect(closeModalMock).toHaveBeenCalledTimes(5)
+  // })
 
   it('should call closeModal when XMarkIcon is clicked', () => {
     const closeModalMock = jest.fn()

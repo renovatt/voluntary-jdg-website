@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Banner />
       <About />
-      <Volunteers />      
+      <Volunteers />
       <Projects />
       <Depositions />
       <Faq />

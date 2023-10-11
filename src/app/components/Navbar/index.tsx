@@ -1,8 +1,11 @@
+'use client'
+import { usePathname } from 'next/navigation'
 import RouterLinks from '../RouterLinks'
 import { NavbarTypeProps } from './types'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 
 const Navbar = ({ openModal }: NavbarTypeProps) => {
+  const path = usePathname()
   return (
     <nav className="flex items-center justify-between">
       <ul className="hidden md:flex md:items-center md:justify-between">
@@ -11,19 +14,25 @@ const Navbar = ({ openModal }: NavbarTypeProps) => {
         </li>
 
         <li className="m-2 p-2">
-          <RouterLinks href="#about-us" text="Sobre" />
+          <RouterLinks
+            href={`${path === '/' ? '#about-us' : '/#about-us'}`}
+            text="Sobre"
+          />
         </li>
 
         <li className="m-2 p-2">
-          <RouterLinks href="/views/vacancies" text="Vagas" />
+          <RouterLinks href="/vacancies" text="Vagas" />
         </li>
 
         <li className="m-2 p-2">
-          <RouterLinks href="/views/blog" text="Blog" />
+          <RouterLinks href="/blog" text="Blog" />
         </li>
 
         <li className="m-2 p-2">
-          <RouterLinks href="#projects" text="Projetos" />
+          <RouterLinks
+            href={`${path === '/' ? '#projects' : '/#projects'}`}
+            text="Projetos"
+          />
         </li>
       </ul>
 

@@ -2,8 +2,11 @@ import { useEffect } from 'react'
 import RouterLinks from '../RouterLinks'
 import { NavbarMobileTypeProps } from './types'
 import { XMarkIcon } from '@heroicons/react/24/outline'
+import { usePathname } from 'next/navigation'
 
 const NavbarMobile = ({ modal, closeModal }: NavbarMobileTypeProps) => {
+  const path = usePathname()
+
   useEffect(() => {
     document.body.style.overflow = modal ? 'hidden' : 'auto'
   }, [modal])
@@ -22,28 +25,28 @@ const NavbarMobile = ({ modal, closeModal }: NavbarMobileTypeProps) => {
             </li>
 
             <li className="m-2 w-full p-2 text-center transition-all hover:scale-105 hover:bg-secondary-800">
-              <RouterLinks href="#about-us" text="Sobre" onClick={closeModal} />
+              <RouterLinks
+                href={`${path === '/' ? '#about-us' : '/#about-us'}`}
+                text="Sobre"
+                onClick={closeModal}
+              />
             </li>
 
             <li className="m-2 w-full p-2 text-center transition-all hover:scale-105 hover:bg-secondary-800">
               <RouterLinks
-                href="/views/vacancies"
+                href="/vacancies"
                 text="Vagas"
                 onClick={closeModal}
               />
             </li>
 
             <li className="m-2 w-full p-2 text-center transition-all hover:scale-105 hover:bg-secondary-800">
-              <RouterLinks
-                href="/views/blog"
-                text="Blog"
-                onClick={closeModal}
-              />
+              <RouterLinks href="/blog" text="Blog" onClick={closeModal} />
             </li>
 
             <li className="m-2 w-full p-2 text-center transition-all hover:scale-105 hover:bg-secondary-800">
               <RouterLinks
-                href="#projects"
+                href={`${path === '/' ? '#projects' : '/#projects'}`}
                 text="Projetos"
                 onClick={closeModal}
               />

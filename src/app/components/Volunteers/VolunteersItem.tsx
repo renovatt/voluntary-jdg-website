@@ -1,14 +1,27 @@
 import React from 'react'
 import { IVolunteers } from './types'
+import Image from 'next/image'
 
-export default function VolunteersItem({image,jobPosition,name}: IVolunteers) {
+export default function VolunteersItem({
+  image,
+  jobPosition,
+  name,
+}: IVolunteers) {
   return (
-    <div className='p-4 flex justify-center items-center flex-col gap-1.5 bg-zinc-50 rounded-lg w-[157px] h-[219px]'>
+    <div className="flex h-[13.688rem] w-[9.813rem] flex-col items-center justify-center gap-1.5 rounded-lg bg-zinc-50 p-4">
       <figure>
-        <img src={image} className='w-[125px] h-[139px]' alt={name} />
+        <Image
+          width={500}
+          height={500}
+          src={image}
+          className="h-[139px] w-[125px]"
+          alt={name}
+        />
       </figure>
-      <p className='text-center sm:text-neutral-500 text-xs font-bold'>{name}</p>
-      <p className='text-center text-xs'>{jobPosition}</p>
+      <p className="text-center text-xs font-bold sm:text-neutral-500">
+        {name}
+      </p>
+      <p className="text-center text-xs">{jobPosition}</p>
     </div>
   )
 }

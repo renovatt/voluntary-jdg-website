@@ -10,6 +10,7 @@ const FooterSocialLinks = ({ socialMedia }: FooterSocialLinksProps) => {
       {socialMedia.map((social, index) => (
         <Link
           key={index}
+          target="_blank"
           data-testid="social-link"
           className="my-4 flex items-center justify-center gap-5 px-2 text-xs text-secondary"
           href={social.href}

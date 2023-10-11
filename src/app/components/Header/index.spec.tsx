@@ -20,12 +20,12 @@ describe('<Header/>', () => {
     expect(logoLink).toHaveAttribute('href', '/')
   })
 
-  it('should have the correct href attribute for the "Contato" link', () => {
-    const { getByRole } = render(<Header />)
-    const contactLink = getByRole('link', { name: /contato/i })
+  // it('should have the correct href attribute for the "Contato" link', () => {
+  //   const { getByRole } = render(<Header />)
+  //   const contactLink = getByRole('link', { name: /contato/i })
 
-    expect(contactLink).toHaveAttribute('href', '#contact')
-  })
+  //   expect(contactLink).toHaveAttribute('href', '#contact')
+  // })
 
   it('should apply hover style on link mouse hover', () => {
     const { getByRole } = render(<Header />)

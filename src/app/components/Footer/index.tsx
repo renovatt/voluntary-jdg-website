@@ -1,3 +1,4 @@
+'use client'
 import FooterLogo from '../FooterLogo'
 import FooterContainer from '../FooterContainer'
 import FooterNavLinks from '../FooterNavLinks'
@@ -5,10 +6,15 @@ import FooterSocialLinks from '../FooterSocialLinks'
 import FooterCopyright from '../FooterCopyright'
 import { SlSocialLinkedin } from 'react-icons/sl'
 import { MdWhatsapp, MdOutlineMailOutline } from 'react-icons/md'
+import { usePathname } from 'next/navigation'
 
 const Footer = () => {
+  const path = usePathname()
   return (
-    <footer className="flex items-center justify-center bg-primary bg-gradient-footer pt-20">
+    <footer
+      id="contact"
+      className="bg-gradient-footer px- flex items-center justify-center bg-primary px-4 pt-20"
+    >
       <FooterContainer>
         <section className="flex w-full flex-wrap items-center justify-between px-4 md:items-start md:px-0">
           <FooterLogo />
@@ -22,15 +28,15 @@ const Footer = () => {
                 },
                 {
                   name: 'Sobre',
-                  href: '#about-us',
+                  href: `${path === '/' ? '#about-us' : '/#about-us'}`,
                 },
                 {
                   name: 'Blog',
-                  href: '#blog',
+                  href: '/blog',
                 },
                 {
                   name: 'Projetos',
-                  href: '#projects',
+                  href: `${path === '/' ? '#projects' : '/#projects'}`,
                 },
               ]}
             />
@@ -40,19 +46,19 @@ const Footer = () => {
               links={[
                 {
                   name: 'Front-End',
-                  href: '#',
+                  href: '/vacancies',
                 },
                 {
                   name: 'Back-End',
-                  href: '#',
+                  href: '/vacancies',
                 },
                 {
                   name: 'Mobile',
-                  href: '#',
+                  href: '/vacancies',
                 },
                 {
                   name: 'UX/UI',
-                  href: '#',
+                  href: '/vacancies',
                 },
               ]}
             />
@@ -90,7 +96,7 @@ const Footer = () => {
             },
             {
               social_name: 'linkedin.com/company/juniors-developers-group/',
-              href: '#',
+              href: 'https://www.linkedin.com/company/juniors-developers-group/mycompany/',
               icon: SlSocialLinkedin,
             },
           ]}

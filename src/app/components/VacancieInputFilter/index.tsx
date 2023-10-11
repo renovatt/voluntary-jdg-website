@@ -10,7 +10,7 @@ export const VacancieInputFilter = ({
       <input
         type="text"
         placeholder="Qual posição você está procurando?"
-        className="min-w-96 w-full rounded-lg border border-primary-300 bg-primary-900 p-3 pl-12 text-start text-secondary outline-none transition-all ease-in placeholder:text-secondary focus:border-primary md:w-96 lg:w-[30rem]"
+        className="min-w-96 w-full rounded-lg border border-primary-300 bg-primary-900 p-3 pl-12 text-start text-secondary outline-none transition-all ease-in placeholder:text-secondary focus:border-primary xl:w-[30rem]"
         value={value}
         onChange={onChange}
       />

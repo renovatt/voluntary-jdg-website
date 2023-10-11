@@ -9,7 +9,7 @@ const BannerImage = () => {
         alt="banner-image"
         className="h-full w-full object-cover"
       />
-      <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-transparent to-shadow"></div>
+      <div className="to-shadow pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-transparent"></div>
     </figure>
   )
 }
