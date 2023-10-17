@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Blog() {
   return (
-    <section className="container flex flex-col items-center justify-center px-4 md:px-0">
+    <section className="container flex flex-col items-center justify-center">
       <header className="mt-10 flex flex-col items-center justify-center gap-4">
         <h1 className="max-w-2xl text-center text-2xl font-semibold tracking-wider text-primary md:text-3xl">
           Blog da JDG
@@ -56,7 +56,8 @@ export default function Blog() {
         </figure>
       </section>
 
-      <section className="mt-14 grid grid-cols-1 gap-20 md:grid-cols-2 xl:grid-cols-3">
+      {/* <section className="mt-14 grid grid-cols-1 gap-20 md:grid-cols-2 xl:grid-cols-3"> */}
+      <section className="mt-14 flex flex-wrap items-center justify-center gap-20 md:justify-between">
         {PostsMock.map((post) => (
           <CardBlog
             key={post.id}

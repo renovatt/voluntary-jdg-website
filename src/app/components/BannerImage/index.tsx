@@ -3,7 +3,7 @@ import banner from '@/assets/banner.png'
 
 const BannerImage = () => {
   return (
-    <figure className="relative w-[85%]">
+    <figure className="relative">
       <Image
         src={banner}
         alt="banner-image"

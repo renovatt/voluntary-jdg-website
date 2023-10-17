@@ -8,7 +8,7 @@ import { SliderItemsMock } from '../../../mocks/SliderItemsMock'
 
 export default function Depositions() {
   return (
-    <section className="container mb-20 bg-primary px-4 md:px-0">
+    <section className="container mb-20 bg-primary">
       <Title text="Depoimentos" />
 
       <h2 className="pb-16 text-2xl font-medium uppercase leading-10 text-zinc-50 sm:text-xxl xl:w-[454px]">

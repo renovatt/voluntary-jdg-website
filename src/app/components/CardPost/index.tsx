@@ -18,7 +18,7 @@ const CardPost = ({
   }, [route])
 
   return (
-    <section className="container flex flex-col items-center justify-center gap-4 px-4 py-10 md:px-0">
+    <section className="container flex flex-col items-center justify-center gap-4 py-10">
       <h1 className="max-w-2xl text-center text-2xl font-semibold tracking-wider text-primary md:text-3xl">
         {title}
       </h1>

@@ -13,7 +13,7 @@ export default function CardBlog({ date, image, title, id }: CardBlogProps) {
   return (
     <article
       onClick={handlePushRoute}
-      className="flex h-96 w-80 flex-col items-center justify-between gap-6 overflow-hidden rounded-2xl border border-secondary-850 bg-primary-900 transition-all ease-in-out hover:cursor-pointer hover:border-primary-400"
+      className="flex h-96 w-64 flex-col items-center justify-between gap-6 overflow-hidden rounded-2xl border border-secondary-850 bg-primary-900 transition-all ease-in-out hover:cursor-pointer hover:border-primary-400 md:w-72 xl:w-80"
     >
       <figure className="w-full">
         <Image

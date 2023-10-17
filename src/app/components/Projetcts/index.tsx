@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="container overflow-hidden bg-primary px-4 py-10 md:px-0"
+      className="container overflow-hidden bg-primary py-10"
     >
       <Title text="PROJETOS" />
 

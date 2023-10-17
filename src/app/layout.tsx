@@ -31,9 +31,11 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={poppins.className}>
         <ToastifyProvider>
-          <Header />
-          <Container>{children}</Container>
-          <Footer />
+          <Container>
+            <Header />
+            {children}
+            <Footer />
+          </Container>
         </ToastifyProvider>
       </body>
     </html>

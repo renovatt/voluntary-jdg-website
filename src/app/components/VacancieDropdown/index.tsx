@@ -16,10 +16,7 @@ const VacancieDropdown = ({ handleCategorySelect }: VacancieDropdownProps) => {
       className="relative w-full text-left md:inline-block xl:w-auto"
     >
       <section>
-        <Menu.Button
-          className="inline-flex w-full items-center justify-between gap-x-1.5 rounded-md bg-primary-900 px-4 py-3 text-sm text-secondary shadow-sm hover:bg-zinc-900 md:flex md:justify-center
-         xl:w-60"
-        >
+        <Menu.Button className="inline-flex w-full items-center justify-between gap-x-1.5 rounded-md bg-primary-900 px-4 py-3 text-sm text-secondary shadow-sm hover:bg-zinc-900 md:flex xl:w-60">
           <BiFilter className="h-5 w-5" />
           Filtrar por
           <ChevronDownIcon

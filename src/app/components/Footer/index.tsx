@@ -13,10 +13,10 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="bg-gradient-footer px- flex items-center justify-center bg-primary px-4 pt-20"
+      className="bg-gradient-footer flex w-full items-center justify-center bg-primary pt-20"
     >
       <FooterContainer>
-        <section className="flex w-full flex-wrap items-center justify-between px-4 md:items-start md:px-0">
+        <section className="flex w-full flex-wrap items-center justify-between md:items-start">
           <FooterLogo />
           <aside className="md:mt0 mt-10 flex flex-wrap items-start justify-start md:flex-nowrap md:justify-around">
             <FooterNavLinks

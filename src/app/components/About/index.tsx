@@ -22,10 +22,10 @@ export default function About() {
   }
 
   return (
-    <section className="container mb-10 mt-28 px-6 sm:px-0">
+    <section className="container mb-10 mt-28">
       <Title text="Sobre" />
-      <div className="flex flex-col gap-10 xl:flex-row">
-        <article>
+      <div className="flex flex-col gap-10 xl:flex-row xl:items-center xl:justify-between">
+        <article className="w-full xl:w-[45.5rem]">
           <h2 className="text-2xl font-semibold leading-9 text-zinc-50">
             Estamos moldando o futuro da tecnologia web
           </h2>
@@ -52,7 +52,7 @@ export default function About() {
             height={337}
             alt="Picture of a computer on a table"
             src={'/About02.png'}
-            className="mt-5 md:m-0 xl:hidden xl:w-[416px]"
+            className="mt-5 xl:m-0 xl:hidden xl:w-[416px]"
           />
           <div className="mt-4 hidden grid-cols-2 gap-4 sm:grid">
             <article className="rounded border border-primary-400 p-4 pl-0 text-zinc-50 transition-all duration-500 ease-out sm:border-none">

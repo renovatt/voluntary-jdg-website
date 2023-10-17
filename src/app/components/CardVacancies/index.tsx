@@ -14,10 +14,7 @@ const CardVacancies = ({
     route.push(`/vacancy/${id}`)
   }, [id, route])
   return (
-    <section
-      className="min-w-96 my-2 h-full w-full rounded-lg border border-l-4 border-primary border-y-transparent border-r-transparent bg-primary-900 p-4 xl:w-[30rem]
-      "
-    >
+    <section className="min-w-96 my-2 h-full w-full rounded-lg border border-l-4 border-primary border-y-transparent border-r-transparent bg-primary-900 p-4 xl:w-[30rem]">
       <span className="rounded-lg bg-primary-800 p-2 text-xs text-secondary">
         Estamos procurando um novo
       </span>

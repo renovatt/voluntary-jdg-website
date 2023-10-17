@@ -9,7 +9,7 @@ export default function DepositionsItem({
   id,
 }: DepositionsItemProps) {
   return (
-    <div className="flex flex-col justify-between gap-6 text-zinc-50 sm:flex-row md:items-start md:gap-10">
+    <div className="flex flex-col justify-between gap-6 text-zinc-50 md:flex-row md:items-start md:gap-10">
       <figure className="space-y-6">
         <Image
           width={50}
@@ -21,16 +21,16 @@ export default function DepositionsItem({
         <p className="w-full leading-8 lg:max-w-[324px] xl:max-w-[488px]">
           {description}
         </p>
-        <span className="hidden font-bold sm:block">{name}</span>
+        <span className="hidden font-bold md:block">{name}</span>
       </figure>
 
-      <Image
+      {/* <Image
         width={1000}
         height={1000}
         src={'/people2.jpg'}
         className="h-[255px] w-full rounded-lg border-2 border-primary bg-cover bg-center object-cover sm:h-full md:h-[538px] md:w-[328px] lg:max-w-[626px]"
         alt={`${id}${name}`}
-      />
+      /> */}
       <span className="text-center font-bold sm:hidden">{name}</span>
     </div>
   )

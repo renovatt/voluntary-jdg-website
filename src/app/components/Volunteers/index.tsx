@@ -37,7 +37,7 @@ export default function Volunteers() {
   const secondHalf = VolunteersMock.slice(halfIndex)
 
   return (
-    <section className="container my-28 px-4 md:px-0">
+    <section className="container my-28">
       <h2 className="m-auto mb-12 w-56 text-center text-3xl font-bold uppercase leading-relaxed text-primary-400 sm:w-full">
         Nossos Voluntários
       </h2>

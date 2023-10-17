@@ -38,7 +38,7 @@ export default function VacancyCardPage({
   }, [route])
 
   return (
-    <section className="container flex flex-col items-center justify-center gap-5 px-4 md:px-0">
+    <section className="container flex flex-col items-center justify-center gap-5">
       <BsArrowLeft
         onClick={handleBack}
         className="my-10 h-12 w-12 self-start rounded-full border border-secondary-500 border-opacity-30 p-2 text-secondary-50 transition-all ease-in-out hover:cursor-pointer hover:border-opacity-100"

@@ -34,10 +34,10 @@ const VacanciesPage = () => {
   return (
     <section
       data-testid="vacancies-page"
-      className="container flex flex-col items-center justify-center px-4 md:px-20"
+      className="container flex flex-col items-center justify-center"
     >
       <VacanciesHeader />
-      <section className="mb-10 mt-20 flex w-full flex-col items-end justify-between gap-4 md:items-center xl:flex-row">
+      <section className="mb-10 mt-20 flex w-full flex-col items-end justify-between gap-4 md:items-center lg:flex-row">
         <VacancieInputFilter
           value={searchText}
           onChange={(e) => handleInputFilter(e.target.value)}
