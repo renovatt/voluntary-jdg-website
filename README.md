@@ -4,38 +4,24 @@
 <h1>JDG - Website</h1> 
 </div>
 
-## Descrição
+### JDG - Website - [Ver Projeto](https://voluntary-jdg-website.vercel.app/)
 
-### JDG - Website em desenvolvimento
+Tive a oportunidade de participar de um dos projetos do grupo ``JDG``, no qual foi o próprio webiste deles.
 
-<!-- [Ver Projeto]() -->
+Nesse projeto fui responsável pela criação dos seguintes: ``Header, Tela inicial, Projetos, FAQ, Vagas, Formulário de inscrição da vaga (rotas dinâmicas), Blog, Informações da postagem (rotas dinâmicas) com toda responsividade.``
 
-<!-- # -->
+Essa é uma versão com dados mocados para melhor desempenho.
 
-<!-- ## Layout mobile -->
-<!-- ![Mobile 1](./public/mobile-1.png) -->
-<!-- ![Mobile 2](./public/mobile-2.png) -->
-
-<!-- ## Layout web -->
-<!-- ![Web 1](./public/web-1.png)  -->
-<!-- ![Web 2](./public/web-2.png) -->
-<!-- ![Web 3](./public/web-3.png) -->
-<!-- ![Web 4](./public/web-4.png) -->
-<!-- ![Web 5](./public/web-5.png) -->
-<!-- ![Web 6](./public/web-6.png) -->
+## Layout web
+![Web 1](./public/web-1.png) 
+![Web 2](./public/web-2.png)
+![Web 3](./public/web-3.png)
+![Web 4](./public/web-4.png)
+![Web 5](./public/web-5.png)
+![Web 6](./public/web-6.png)
+![Web 7](./public/web-7.png)
 
 <br>
-
-<!-- # -->
-
-[Ver Projeto](https://interception-routes.vercel.app/)
-
-<!-- # -->
-
-<!-- ## Layout web -->
-<!-- ![Web 1](./public/web-1.png) -->
-#
-<!-- ![Web 2](./public/web-2.png) -->
 
 ## 🛠️ Tecnologias
 
@@ -44,11 +30,10 @@
 - [Typescript](https://www.typescriptlang.org)
 
 📚 **Bibliotecas**
-<!-- - [storybook](https://storybook.js.org/) -->
-<!-- - [next-pwa](https://www.npmjs.com/package/next-pwa) -->
-<!-- - [react-hook-form](https://react-hook-form.com/) -->
-<!-- - [react-toastify](https://www.npmjs.com/package/react-toastify) -->
+- [react-hook-form](https://react-hook-form.com/)
+- [react-toastify](https://www.npmjs.com/package/react-toastify)
 - [react-icons](https://react-icons.github.io/react-icons/)
+- [swiperjs](https://swiperjs.com/demos)
 
 🎨 **Estilização**
 - [tailwindcss](https://tailwindcss.com/docs/installation)
@@ -63,7 +48,7 @@
 
 Clone do Projeto
 
-    $ git clone https://github.com/Juniors-Developers-Group-JDG/Site-JDG-Front-End.git
+    $ git clone https://github.com/renovatt/voluntary-jdg-website.git
 
 Instalando as dependências
 
@@ -87,4 +72,35 @@ Configuranções do VSCode
 
 <br>
 
-<!-- **Contribuidores** -->
+🤝 **Contribuidores**
+
+<table style="border-collapse: separate; border-spacing: 10px;">
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%" style="border-radius: 10px; padding: 10px; background-color: #fafafa;">
+          <a href="https://github.com/anaclaraaraujo">
+            <img src="https://avatars.githubusercontent.com/u/72226706?v=4" width="100px;" style="border-radius: 50px;" alt="Wildemberg "/><br />
+            <sub><b>Ana Clara Araujo</b></sub>
+          </a>
+          <br />
+          <a href="#Design" title="Design">🎨</a>
+        </td>
+      <td align="center" valign="top" width="14.28%" style="border-radius: 10px; padding: 10px; background-color: #fafafa;">
+          <a href="https://github.com/renovatt">
+            <img src="https://avatars.githubusercontent.com/u/94547135?v=4" width="100px;" style="border-radius: 50px;" alt="Wildemberg "/><br />
+            <sub><b>Willdemberg</b></sub>
+          </a>
+          <br />
+          <a href="#Code" title="Code">💻</a>
+        </td>
+      <td align="center" valign="top" width="14.28%" style="border-radius: 10px; padding: 10px; background-color: #fafafa;">
+          <a href="https://github.com/matheusOliv23">
+            <img src="https://avatars.githubusercontent.com/u/78116908?v=4" width="100px;" style="border-radius: 50px;" alt="Wildemberg "/><br />
+            <sub><b>Matheus Henrique</b></sub>
+          </a>
+          <br />
+          <a href="#Code" title="Code">💻</a>
+        </td>
+    </tr>
+  </tbody>
+</table>
